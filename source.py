@@ -42,19 +42,19 @@ def randomizer(f, s, t, fou):
 
 # main function
 def main():
-    first_list, second_list, third_list, fourth_list = generate_random_list_number(1000)
+    first_list, second_list, third_list, fourth_list = generate_random_list_number(100)
     print("{}, {}, {}, {}".format(len(first_list), len(second_list), len(third_list), len(fourth_list)))
 
     first_list, bubble_sort_compare_1000 = bubble_sort(first_list)
     print (bubble_sort_compare_1000)
 
-    first_list, second_list, third_list, fourth_list = generate_random_list_number(10000)
+    first_list, second_list, third_list, fourth_list = generate_random_list_number(1000)
     print("{}, {}, {}, {}".format(len(first_list), len(second_list), len(third_list), len(fourth_list)))
     
     first_list, bubble_sort_compare_10000 = bubble_sort(first_list)
     print (bubble_sort_compare_10000)
 
-    first_list, second_list, third_list, fourth_list = generate_random_list_number(100000)
+    first_list, second_list, third_list, fourth_list = generate_random_list_number(10000)
     print("{}, {}, {}, {}".format(len(first_list), len(second_list), len(third_list), len(fourth_list)))
 
     first_list, bubble_sort_compare_100000 = bubble_sort(first_list)
