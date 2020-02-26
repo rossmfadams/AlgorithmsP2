@@ -12,6 +12,7 @@ import selectionSort
 import mergeSort
 import quickSort
 
+
 # create four lists of random numbers
 def generate_random_list_number(number):
     first_list = []
@@ -30,7 +31,8 @@ def generate_random_list_number(number):
 
 
 # Take in sorted lists and randomly pick an index to swap with index 100
-# return the lists 
+# return the lists
+# this program is to create an almost sorted list
 def randomizer(f, s, t, fou):
     value = random.randint(0, 1000)
     f[100], f[value] = f[value], f[100]
@@ -42,16 +44,15 @@ def randomizer(f, s, t, fou):
 
 # main function
 def main():
+    first_list, second_list, third_list, fourth_list = generate_random_list_number(100)
+    print("{}, {}, {}, {}".format(len(first_list), len(second_list), len(third_list), len(fourth_list)))
+
     first_list, second_list, third_list, fourth_list = generate_random_list_number(1000)
     print("{}, {}, {}, {}".format(len(first_list), len(second_list), len(third_list), len(fourth_list)))
 
-
     first_list, second_list, third_list, fourth_list = generate_random_list_number(10000)
     print("{}, {}, {}, {}".format(len(first_list), len(second_list), len(third_list), len(fourth_list)))
-    
 
-    first_list, second_list, third_list, fourth_list = generate_random_list_number(100000)
-    print("{}, {}, {}, {}".format(len(first_list), len(second_list), len(third_list), len(fourth_list)))
 
 if __name__ == "__main__":
     main()
