@@ -45,13 +45,20 @@ def main():
     first_list, second_list, third_list, fourth_list = generate_random_list_number(1000)
     print("{}, {}, {}, {}".format(len(first_list), len(second_list), len(third_list), len(fourth_list)))
 
+    first_list, comparisons = bubbleSort.bubble_sort(first_list)
+    print(comparisons)
 
     first_list, second_list, third_list, fourth_list = generate_random_list_number(10000)
     print("{}, {}, {}, {}".format(len(first_list), len(second_list), len(third_list), len(fourth_list)))
     
+    first_list, comparisons = bubbleSort.bubble_sort(first_list)
+    print(comparisons)
 
     first_list, second_list, third_list, fourth_list = generate_random_list_number(100000)
     print("{}, {}, {}, {}".format(len(first_list), len(second_list), len(third_list), len(fourth_list)))
+
+    first_list, comparisons = bubbleSort.bubble_sort(first_list)
+    print(comparisons)
 
 if __name__ == "__main__":
     main()
