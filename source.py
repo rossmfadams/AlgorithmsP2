@@ -11,6 +11,7 @@ import bubbleSort
 import selectionSort
 import mergeSort
 import quickSort
+import writeToFile
 
 # create four lists of random numbers
 def generate_random_list_number(number):
@@ -42,6 +43,7 @@ def randomizer(f, s, t, fou):
 
 # main function
 def main():
+
     first_list, second_list, third_list, fourth_list = generate_random_list_number(100)
     print("{}, {}, {}, {}".format(len(first_list), len(second_list), len(third_list), len(fourth_list)))
 
