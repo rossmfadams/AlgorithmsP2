@@ -1,3 +1,8 @@
+# This class write name, best case, worst case, unsorted time, unsorted counter,
+# semi sorted time, and semi sorted counter to a file call data.txt
+#
+
+
 class WriteToFile:
     def __init__(self):
         self.fileOpen = open('data.txt', 'w')
