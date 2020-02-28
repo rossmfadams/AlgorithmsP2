@@ -1,14 +1,16 @@
 Best Case for test: N
 Worst Case for test: N^2
-The time for unsorted is: 10 
-The unsorted counter for testis: 10The time for semi sorted is: 10 
-The unsorted counter for testis: 10
+The time for unsorted test is: 10 
+The unsorted counter for test is: 10
+The time for semi sorted test is: 10 
+The unsorted counter for test is: 10
 
 
 Best Case for test2: N
 Worst Case for test2: N^2
-The time for unsorted is: 10 
-The unsorted counter for test2is: 10The time for semi sorted is: 10 
-The unsorted counter for test2is: 10
+The time for unsorted test2 is: 10 
+The unsorted counter for test2 is: 10
+The time for semi sorted test2 is: 10 
+The unsorted counter for test2 is: 10
 
 

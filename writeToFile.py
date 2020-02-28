@@ -10,10 +10,10 @@ class WriteToFile:
     def write_to_file(self, name, worst_case, best_case, unsorted_time, unsorted_counter, semi_sorted_time, semi_sorted_counter):
         self.fileOpen.write('Best Case for ' + name + ': ' + best_case + '\n')
         self.fileOpen.write('Worst Case for ' + name + ': ' + worst_case + '\n')
-        self.fileOpen.write('The time for unsorted is: {} \n'.format(unsorted_time))
-        self.fileOpen.write('The unsorted counter for ' + name + 'is: {}'.format(unsorted_counter))
-        self.fileOpen.write('The time for semi sorted is: {} \n'.format(semi_sorted_time))
-        self.fileOpen.write('The unsorted counter for ' + name + 'is: {}\n\n\n'.format(semi_sorted_counter))
+        self.fileOpen.write('The time for unsorted ' + name + ' is: {} \n'.format(unsorted_time))
+        self.fileOpen.write('The unsorted counter for ' + name + ' is: {}\n'.format(unsorted_counter))
+        self.fileOpen.write('The time for semi sorted ' + name + ' is: {} \n'.format(semi_sorted_time))
+        self.fileOpen.write('The unsorted counter for ' + name + ' is: {}\n\n\n'.format(semi_sorted_counter))
 
     def close(self):
         self.fileOpen.close()
