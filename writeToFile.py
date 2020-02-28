@@ -14,3 +14,6 @@ class WriteToFile:
         self.fileOpen.write('The unsorted counter for ' + name + 'is: {}'.format(unsorted_counter))
         self.fileOpen.write('The time for semi sorted is: {} \n'.format(semi_sorted_time))
         self.fileOpen.write('The unsorted counter for ' + name + 'is: {}'.format(semi_sorted_counter))
+
+    def close(self):
+        self.fileOpen.close()

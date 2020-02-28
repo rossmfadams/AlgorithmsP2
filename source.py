@@ -11,7 +11,7 @@ import bubbleSort
 import selectionSort
 import mergeSort
 import quickSort
-import writeToFile
+from writeToFile import WriteToFile
 
 # create four lists of random numbers
 def generate_random_list_number(number):
@@ -43,26 +43,35 @@ def randomizer(f, s, t, fou):
 
 # main function
 def main():
+    # instantiate write to file
+    writeFile = WriteToFile()
 
-    writeFile = writeToFile()
-
+    # 100 list
     first_list, second_list, third_list, fourth_list = generate_random_list_number(100)
     print("{}, {}, {}, {}".format(len(first_list), len(second_list), len(third_list), len(fourth_list)))
 
+    # sorting 100 list with bubblesort
     first_list, comparisons = bubbleSort.bubble_sort(first_list)
     print(comparisons)
 
+    writeFile.write_to_file('test', 'N^2', 'N', 10, 10, 10, 10)
+
+    # 1000 list
     first_list, second_list, third_list, fourth_list = generate_random_list_number(1000)
     print("{}, {}, {}, {}".format(len(first_list), len(second_list), len(third_list), len(fourth_list)))
     
     first_list, comparisons = bubbleSort.bubble_sort(first_list)
     print(comparisons)
 
+    # 10000 list
     first_list, second_list, third_list, fourth_list = generate_random_list_number(10000)
     print("{}, {}, {}, {}".format(len(first_list), len(second_list), len(third_list), len(fourth_list)))
 
     first_list, comparisons = bubbleSort.bubble_sort(first_list)
     print(comparisons)
+
+    writeFile.close()
+
 
 if __name__ == "__main__":
     main()
