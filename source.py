@@ -28,6 +28,7 @@ def main():
     print(comparisons)
 
     write_file.write_to_file('test', 'N^2', 'N', 10, 10, 10, 10)
+    write_file.write_to_file('test2', 'N^2', 'N', 10, 10, 10, 10)
 
     # 1000 list
     first_list, second_list, third_list, fourth_list = arrayGenerator.generate_random_list_number(1000)
