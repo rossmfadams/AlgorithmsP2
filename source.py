@@ -8,7 +8,7 @@
 # Be sure to comment your code!
 import bubbleSort
 import selectionSort
-import mergeSort
+from mergeSort import MergeSort
 import quickSort
 import arrayGenerator
 import time
@@ -17,11 +17,11 @@ from writeToFile import WriteToFile
 
 # main function
 def main():
-    from mergeSort import count
     from quickSort import q_count
 
     # instantiate write to file
     write_file = WriteToFile()
+    merge_sort = MergeSort()
 
     # 100 list
     first_list, second_list, third_list, fourth_list = arrayGenerator.generate_random_list_number(100)
@@ -41,9 +41,9 @@ def main():
     
     # sorting 100 list with mergesort
     start_time = time.perf_counter()
-    third_list = mergeSort.merge_sort(third_list)
+    third_list = merge_sort.merge_sort(third_list)
     print("Merge Sort time: %s seconds" % (time.perf_counter() - start_time))
-    print("Merge Sort comparisions: ", count)
+    print("Merge Sort comparisions: ", merge_sort.count)
 
     # sorting 100 list with quicksort
     start_time = time.perf_counter()
@@ -72,9 +72,9 @@ def main():
     
     # sorting 1000 list with mergesort
     start_time = time.perf_counter()
-    third_list = mergeSort.merge_sort(third_list)
+    third_list = merge_sort.merge_sort(third_list)
     print("Merge Sort time: %s seconds" % (time.perf_counter() - start_time))
-    print("Merge Sort comparisions: ", count)
+    print("Merge Sort comparisions: ", merge_sort.count)
 
     # sorting 1000 list with quicksort
     start_time = time.perf_counter()
