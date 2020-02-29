@@ -9,36 +9,44 @@
 #  Algorithm used: https://medium.com/@george.seif94/a-tour-of-the-top-5-sorting-algorithms-with-python-code-43ea9aa02889
 #  Contributed by Ross Adams
 
+count = 0
 
 def merge_sort(arr):
     # The last array split
     if len(arr) <= 1:
         return arr
-    mid = len(arr) // 2
+    mid = (len(arr) // 2)
     # Perform merge_sort recursively on both halves
-    left, right = merge_sort(arr[:mid]), merge_sort(arr[mid:])
-
+    right = merge_sort(arr[mid:])
+    left = merge_sort(arr[:mid])
+    
     # Merge each side together
-    return merge(left, right, arr.copy())
+    return merge(left, right,arr.copy())
 
 
 def merge(left, right, merged):
 
     left_cursor, right_cursor = 0, 0
+    sorted_cursor = left_cursor
+    global count
     while left_cursor < len(left) and right_cursor < len(right):
       
         # Sort each one and place into the result
         if left[left_cursor] <= right[right_cursor]:
-            merged[left_cursor+right_cursor]=left[left_cursor]
+            count += 1
+            merged[sorted_cursor]=left[left_cursor]
             left_cursor += 1
         else:
-            merged[left_cursor + right_cursor] = right[right_cursor]
+            count += 1
+            merged[sorted_cursor] = right[right_cursor]
             right_cursor += 1
             
     for left_cursor in range(left_cursor, len(left)):
-        merged[left_cursor + right_cursor] = left[left_cursor]
+        merged[sorted_cursor] = left[left_cursor]
+        sorted_cursor += 1
         
     for right_cursor in range(right_cursor, len(right)):
-        merged[left_cursor + right_cursor] = right[right_cursor]
+        merged[sorted_cursor] = right[right_cursor]
+        sorted_cursor += 1
 
     return merged
