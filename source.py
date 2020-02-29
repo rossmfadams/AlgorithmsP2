@@ -94,8 +94,8 @@ def main():
     quickSort.quick_sort(fourth_list)
     end_time = time.perf_counter()
     print("Quick Sort time: %s seconds " % (end_time - start_time))
-    comparisons = q_count
-    print("Quick Sort comparisions: ", q_count)
+    comparisons = quickSort.q_count
+    print("Quick Sort comparisions: ", quickSort.q_count)
 
 
     # Creating the semisorted list
@@ -106,7 +106,7 @@ def main():
     quickSort.quick_sort(fourth_list)
     end_time_semisorted = time.perf_counter()
     print("Quick Sort time on semisorted array: %s seconds" % (end_time_semisorted - start_time_semisorted))
-    semisorted_comparisons = q_count
+    semisorted_comparisons = quickSort.q_count
     print("Quick Sort comparisions on semisorted array: ", semisorted_comparisons)
 
     # Writing the Quick Sort data to the file
@@ -183,7 +183,8 @@ def main():
     quickSort.quick_sort(fourth_list)
     end_time = time.perf_counter()
     print("Quick Sort time: %s seconds " % (end_time - start_time))
-    print("Quick Sort comparisions: ", q_count)
+    comparisons = quickSort.q_count
+    print("Quick Sort comparisions: ", quickSort.q_count)
 
     # Creating the semisorted list
     fourth_list = arrayGenerator.randomizer(fourth_list)
@@ -193,7 +194,7 @@ def main():
     quickSort.quick_sort(fourth_list)
     end_time_semisorted = time.perf_counter()
     print("Quick Sort time on semisorted array: %s seconds" % (end_time_semisorted - start_time_semisorted))
-    semisorted_comparisons = q_count
+    semisorted_comparisons = quickSort.q_count
     print("Quick Sort comparisions on semisorted array: ", semisorted_comparisons)
 
     # Writing the Quick Sort data to the file
@@ -269,7 +270,8 @@ def main():
     quickSort.quick_sort(fourth_list)
     end_time = time.perf_counter()
     print("Quick Sort time: %s seconds " % (end_time - start_time))
-    print("Quick Sort comparisions: ", q_count)
+    comparisons = quickSort.q_count
+    print("Quick Sort comparisions: ", quickSort.q_count)
 
     # Writing the Quick Sort data to the file
     write_file.write_to_file('Quick Sort', 'O(n^2)', 'O(nlog(n))', 10000, end_time - start_time, comparisons, 0, 0)
