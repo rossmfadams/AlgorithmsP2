@@ -13,11 +13,14 @@ import quickSort
 import arrayGenerator
 import time
 from writeToFile import WriteToFile
+import sys
 
 
 # main function
 def main():
     from quickSort import q_count
+
+    sys.setrecursionlimit(5000)
 
     # instantiate write to file
     write_file = WriteToFile()
@@ -273,11 +276,21 @@ def main():
     comparisons = quickSort.q_count
     print("Quick Sort comparisions: ", quickSort.q_count)
 
+    # Creating the semisorted list
+    fourth_list = arrayGenerator.randomizer(fourth_list)
+
+    # sorting 10000 semisorted list with quicksort
+    start_time_semisorted = time.perf_counter()
+    quickSort.quick_sort(fourth_list)
+    end_time_semisorted = time.perf_counter()
+    print("Quick Sort time on semisorted array: %s seconds" % (end_time_semisorted - start_time_semisorted))
+    semisorted_comparisons = quickSort.q_count
+    print("Quick Sort comparisions on semisorted array: ", semisorted_comparisons)
+
     # Writing the Quick Sort data to the file
-    write_file.write_to_file('Quick Sort', 'O(n^2)', 'O(nlog(n))', 10000, end_time - start_time, comparisons, 0, 0)
+    write_file.write_to_file('Quick Sort', 'O(n^2)', 'O(nlog(n))', 10000, end_time - start_time, comparisons, end_time_semisorted - start_time_semisorted, semisorted_comparisons)
 
     write_file.close()
-
 
 if __name__ == "__main__":
     main()
