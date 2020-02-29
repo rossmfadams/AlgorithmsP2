@@ -2,19 +2,19 @@ Bubble Sort:
 Best Case for Bubble Sort: O(n)
 Worst Case for Bubble Sort: O(n^2)
 Number of elements sorted: 100
-The time for unsorted Bubble Sort is: 0.0013719999999999982 
-The unsorted counter for Bubble Sort is: 2531
-The time for semi sorted Bubble Sort is: 0.0003850000000000034 
-The unsorted counter for semi sorted Bubble Sort is: 73
+The time for unsorted Bubble Sort is: 0.0011233000000000007 
+The unsorted counter for Bubble Sort is: 2099
+The time for semi sorted Bubble Sort is: 0.00031869999999999815 
+The unsorted counter for semi sorted Bubble Sort is: 63
 
 
 Selection Sort: 
 Best Case for Selection Sort: O(n^2)
 Worst Case for Selection Sort: O(n^2)
 Number of elements sorted: 100
-The time for unsorted Selection Sort is: 0.0006888999999999992 
+The time for unsorted Selection Sort is: 0.0006188000000000027 
 The unsorted counter for Selection Sort is: 4950
-The time for semi sorted Selection Sort is: 0.001313599999999998 
+The time for semi sorted Selection Sort is: 0.0006226000000000009 
 The unsorted counter for semi sorted Selection Sort is: 4950
 
 
@@ -22,39 +22,39 @@ Merge Sort:
 Best Case for Merge Sort: O(nlog(n))
 Worst Case for Merge Sort: O(nlog(n))
 Number of elements sorted: 100
-The time for unsorted Merge Sort is: 0.0007056000000000007 
-The unsorted counter for Merge Sort is: 334
-The time for semi sorted Merge Sort is: 0.0003509000000000012 
-The unsorted counter for semi sorted Merge Sort is: 666
+The time for unsorted Merge Sort is: 0.0003413000000000027 
+The unsorted counter for Merge Sort is: 332
+The time for semi sorted Merge Sort is: 0.0003110999999999947 
+The unsorted counter for semi sorted Merge Sort is: 657
 
 
 Quick Sort: 
 Best Case for Quick Sort: O(nlog(n))
 Worst Case for Quick Sort: O(n^2)
 Number of elements sorted: 100
-The time for unsorted Quick Sort is: 0.00017670000000000186 
-The unsorted counter for Quick Sort is: 346
-The time for semi sorted Quick Sort is: 0.0003594999999999987 
-The unsorted counter for semi sorted Quick Sort is: 502
+The time for unsorted Quick Sort is: 0.00017740000000000117 
+The unsorted counter for Quick Sort is: 352
+The time for semi sorted Quick Sort is: 0.00035530000000000284 
+The unsorted counter for semi sorted Quick Sort is: 470
 
 
 Bubble Sort: 
 Best Case for Bubble Sort: O(n)
 Worst Case for Bubble Sort: O(n^2)
 Number of elements sorted: 1000
-The time for unsorted Bubble Sort is: 0.156067 
-The unsorted counter for Bubble Sort is: 246802
-The time for semi sorted Bubble Sort is: 0.002570900000000015 
-The unsorted counter for semi sorted Bubble Sort is: 40
+The time for unsorted Bubble Sort is: 0.1336032 
+The unsorted counter for Bubble Sort is: 245578
+The time for semi sorted Bubble Sort is: 0.005680799999999986 
+The unsorted counter for semi sorted Bubble Sort is: 104
 
 
 Selection Sort: 
 Best Case for Selection Sort: O(n^2)
 Worst Case for Selection Sort: O(n^2)
 Number of elements sorted: 1000
-The time for unsorted Selection Sort is: 0.07903500000000002 
+The time for unsorted Selection Sort is: 0.06727659999999999 
 The unsorted counter for Selection Sort is: 499500
-The time for semi sorted Selection Sort is: 0.07458140000000002 
+The time for semi sorted Selection Sort is: 0.07916969999999995 
 The unsorted counter for semi sorted Selection Sort is: 499500
 
 
@@ -62,39 +62,39 @@ Merge Sort:
 Best Case for Merge Sort: O(nlog(n))
 Worst Case for Merge Sort: O(nlog(n))
 Number of elements sorted: 1000
-The time for unsorted Merge Sort is: 0.0040395999999999765 
+The time for unsorted Merge Sort is: 0.006015899999999963 
 The unsorted counter for Merge Sort is: 499500
-The time for semi sorted Merge Sort is: 0.004095799999999983 
-The unsorted counter for semi sorted Merge Sort is: 10634
+The time for semi sorted Merge Sort is: 0.0068966000000000305 
+The unsorted counter for semi sorted Merge Sort is: 10625
 
 
 Quick Sort: 
 Best Case for Quick Sort: O(nlog(n))
 Worst Case for Quick Sort: O(n^2)
 Number of elements sorted: 1000
-The time for unsorted Quick Sort is: 0.0032341000000000175 
-The unsorted counter for Quick Sort is: 7546
-The time for semi sorted Quick Sort is: 0.03242660000000003 
-The unsorted counter for semi sorted Quick Sort is: 8746
+The time for unsorted Quick Sort is: 0.004733100000000046 
+The unsorted counter for Quick Sort is: 6224
+The time for semi sorted Quick Sort is: 0.03714969999999995 
+The unsorted counter for semi sorted Quick Sort is: 7488
 
 
 Bubble Sort: 
 Best Case for Bubble Sort: O(n)
 Worst Case for Bubble Sort: O(n^2)
 Number of elements sorted: 10000
-The time for unsorted Bubble Sort is: 17.9426235 
-The unsorted counter for Bubble Sort is: 24963719
-The time for semi sorted Bubble Sort is: 0.100305800000001 
-The unsorted counter for semi sorted Bubble Sort is: 111
+The time for unsorted Bubble Sort is: 15.1453269 
+The unsorted counter for Bubble Sort is: 25108779
+The time for semi sorted Bubble Sort is: 0.04528919999999914 
+The unsorted counter for semi sorted Bubble Sort is: 47
 
 
 Selection Sort: 
 Best Case for Selection Sort: O(n^2)
 Worst Case for Selection Sort: O(n^2)
 Number of elements sorted: 10000
-The time for unsorted Selection Sort is: 8.735767599999999 
+The time for unsorted Selection Sort is: 7.7144753 
 The unsorted counter for Selection Sort is: 49995000
-The time for semi sorted Selection Sort is: 7.7063904 
+The time for semi sorted Selection Sort is: 7.713341300000003 
 The unsorted counter for semi sorted Selection Sort is: 49995000
 
 
@@ -102,19 +102,19 @@ Merge Sort:
 Best Case for Merge Sort: O(nlog(n))
 Worst Case for Merge Sort: O(nlog(n))
 Number of elements sorted: 10000
-The time for unsorted Merge Sort is: 0.05498670000000061 
+The time for unsorted Merge Sort is: 0.047082900000003036 
 The unsorted counter for Merge Sort is: 49995000
-The time for semi sorted Merge Sort is: 0.04854269999999872 
-The unsorted counter for semi sorted Merge Sort is: 143323
+The time for semi sorted Merge Sort is: 0.04721070000000083 
+The unsorted counter for semi sorted Merge Sort is: 143273
 
 
 Quick Sort: 
 Best Case for Quick Sort: O(nlog(n))
 Worst Case for Quick Sort: O(n^2)
 Number of elements sorted: 10000
-The time for unsorted Quick Sort is: 0.039509300000005965 
-The unsorted counter for Quick Sort is: 94683
-The time for semi sorted Quick Sort is: 0 
-The unsorted counter for semi sorted Quick Sort is: 0
+The time for unsorted Quick Sort is: 0.04127030000000076 
+The unsorted counter for Quick Sort is: 99214
+The time for semi sorted Quick Sort is: 3.0398985999999972 
+The unsorted counter for semi sorted Quick Sort is: 111878
 
 
