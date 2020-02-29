@@ -20,7 +20,7 @@ import sys
 def main():
     from quickSort import q_count
 
-    sys.setrecursionlimit(5000)
+    sys.setrecursionlimit(10000)
 
     # instantiate write to file
     write_file = WriteToFile()
