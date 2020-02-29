@@ -21,10 +21,7 @@ def generate_random_list_number(number):
 
 # Take in sorted lists and randomly pick an index to swap with index 100
 # return the lists
-def randomizer(f, s, t, fou):
-    value = random.randint(0, 1000)
-    f[100], f[value] = f[value], f[100]
-    s[100], s[value] = s[value], s[100]
-    t[100], t[value] = t[value], t[100]
-    fou[100], fou[value] = fou[value], fou[100]
-    return f, s, t, fou
+def randomizer(arr):
+    value = random.randint(0, 99)
+    arr[99], arr[value] = arr[value], arr[99]
+    return arr
