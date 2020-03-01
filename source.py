@@ -5,7 +5,6 @@
 #
 #  @author Ross Adams, Longtin Hang, and Riley Williams
 
-# Be sure to comment your code!
 import bubbleSort
 import selectionSort
 from mergeSort import MergeSort
